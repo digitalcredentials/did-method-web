@@ -1,4 +1,4 @@
-# did:web method driver _(@digitalbazaar/did-method-web)_
+# did:web method driver _(@digitalcredentials/did-method-web)_
 
 [![Build status](https://github.com/digitalbazaar/did-method-web/actions/workflows/main.yml/badge.svg)](https://github.com/digitalbazaar/did-method-web/actions/workflows/main.yml)
 [![Coverage status](https://img.shields.io/codecov/c/github/digitalbazaar/did-method-web)](https://codecov.io/gh/digitalbazaar/did-method-web)
@@ -25,7 +25,7 @@ See also (related specs):
 * [Linked Data Cryptographic Suite Registry](https://w3c-ccg.github.io/ld-cryptosuite-registry/)
 * [Linked Data Proofs](https://w3c-dvcg.github.io/ld-proofs/)
 
-A `did:web` method driver for the [`did-io`](https://github.com/digitalbazaar/did-io)
+A `did:web` method driver for the [`did-io`](https://github.com/digitalcredentials/did-io)
 client library and for standalone use.
 
 `did:web` allows DIDs to bootstrap trust using a web domain's existing reputation.
@@ -99,13 +99,13 @@ Requires Node.js 18+
 To install from `npm`:
 
 ```
-npm install --save @digitalbazaar/did-method-web
+npm install --save @digitalcredentials/did-method-web
 ```
 
 To install locally (for development):
 
 ```
-git clone https://github.com/digitalbazaar/did-method-web.git
+git clone https://github.com/digitalcredentials/did-method-web.git
 cd did-method-web
 npm install
 ```
@@ -117,11 +117,11 @@ npm install
 A new `did:web` DID Document can be generated from an existing key pair:
 
 ```js
-import {driver} from '@digitalbazaar/did-method-web';
+import {driver} from '@digitalcredentials/did-method-web';
 import {Ed25519VerificationKey2020} from
-  '@digitalbazaar/ed25519-verification-key-2020';
+  '@digitalcredentials/ed25519-verification-key-2020';
 import {X25519KeyAgreementKey2020} from
-  '@digitalbazaar/x25519-key-agreement-key-2020';
+  '@digitalcredentials/x25519-key-agreement-key-2020';
 
 // create a driver with the desired key support
 const didWebDriver = driver();
@@ -299,7 +299,7 @@ This library resolves HTTP requests using implementations of [`fetch`](https://f
 The following apis will accept a `fetchOptions` parameter: `DidWebDriver`, `driver`, and `driver.get`.
 
 ```js
-import {DidWebDriver, driver} from '@digitalbazaar/did-method-web';
+import {DidWebDriver, driver} from '@digitalcredentials/did-method-web';
 // accept really large DID documents
 const fetchOptions = {size: 81920000};
 const driver = new driver({fetchOptions});
@@ -317,14 +317,14 @@ functions for working with `did:web` DIDs.
 To convert a `did:web` URL to its corresponding HTTPS URL:
 
 ```js
-import {didUrlToHttpsUrl} from '@digitalbazaar/did-method-web';
+import {didUrlToHttpsUrl} from '@digitalcredentials/did-method-web';
 const didUrl = 'did:web:w3c-ccg.github.io:user:alice';
 const httpsUrl = didUrlToHttpsUrl(did);
 // https://w3c-ccg.github.io/user/alice/did.json
 ```
 To convert an HTTPS URL to its corresponding `did:web` DID URL
 ```js
-import {httpsUrlToDidUrl} from '@digitalbazaar/did-method-web';
+import {httpsUrlToDidUrl} from '@digitalcredentials/did-method-web';
 const httpsUrl = 'https://w3c-ccg.github.io/user/alice/did.json'
 const didUrl = httpsUrlToDidUrl(url);
 // did:web:w3c-ccg.github.io:user:alice
@@ -332,18 +332,12 @@ const didUrl = httpsUrlToDidUrl(url);
 
 ## Contribute
 
-See [the contribute file](https://github.com/digitalbazaar/bedrock/blob/master/CONTRIBUTING.md)!
-
 PRs accepted.
 
 If editing the Readme, please conform to the
 [standard-readme](https://github.com/RichardLitt/standard-readme) specification.
 
-## Commercial Support
-
-Commercial support for this library is available upon request from
-Digital Bazaar: support@digitalbazaar.com
-
 ## License
 
-[New BSD License (3-clause)](LICENSE) © Digital Bazaar
+[MIT License](LICENSE.md) © 2025 Digital Credentials Consortium.
+
