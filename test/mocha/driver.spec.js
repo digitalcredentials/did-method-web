@@ -35,7 +35,7 @@ didWebDriver.use({
 describe('did:web method driver', () => {
   describe('allowList', () => {
     describe('get', function() {
-      it.only('should allow any domain if no allowList', async function() {
+      it('should allow any domain if no allowList', async function() {
         const stub = stubRequest({url: FILE_URL, data: EXPECTED_DID_DOC});
         let error;
         let result;
