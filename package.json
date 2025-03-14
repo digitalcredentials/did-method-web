@@ -18,7 +18,7 @@
   ],
   "dependencies": {
     "@digitalcredentials/did-io": "^1.0.2",
-    "@digitalcredentials/did-method-key": "file:../did-method-key",
+    "@digitalcredentials/did-method-key": "^3.0.0-beta.1",
     "@digitalcredentials/http-client": "^5.0.4",
     "klona": "^2.0.6"
   },
