@@ -1,6 +1,6 @@
 {
   "name": "@digitalcredentials/did-method-web",
-  "version": "1.0.3-beta.1",
+  "version": "1.1.0-beta.1",
   "description": "A did:web method resolver.",
   "homepage": "https://github.com/digitalcredentials/did-method-web",
   "repository": {
