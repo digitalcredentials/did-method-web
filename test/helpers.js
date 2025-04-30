@@ -1,7 +1,7 @@
 /*!
  * Copyright (c) 2023-2024 Digital Bazaar, Inc. All rights reserved.
  */
-import {httpClient} from '@digitalbazaar/http-client';
+import {httpClient} from '@digitalcredentials/http-client';
 import sinon from 'sinon';
 
 export function stubRequest({url, data}) {

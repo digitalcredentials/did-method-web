@@ -1,31 +1,25 @@
 {
-  "name": "@digitalbazaar/did-method-web",
-  "version": "1.0.2-0",
+  "name": "@digitalcredentials/did-method-web",
+  "version": "1.1.0",
   "description": "A did:web method resolver.",
-  "homepage": "https://github.com/digitalbazaar/did-method-web",
-  "author": {
-    "name": "Digital Bazaar, Inc.",
-    "email": "support@digitalbazaar.com",
-    "url": "https://digitalbazaar.com/"
-  },
+  "homepage": "https://github.com/digitalcredentials/did-method-web",
   "repository": {
     "type": "git",
-    "url": "https://github.com/digitalbazaar/did-method-web"
+    "url": "https://github.com/digitalcredentials/did-method-web"
   },
   "bugs": {
-    "url": "https://github.com/digitalbazaar/did-method-web/issues",
-    "email": "support@digitalbazaar.com"
+    "url": "https://github.com/digitalcredentials/did-method-web/issues"
   },
-  "license": "BSD-3-Clause",
+  "license": "MIT",
   "type": "module",
   "exports": "./lib/index.js",
   "files": [
     "lib/**/*.js"
   ],
   "dependencies": {
-    "@digitalbazaar/did-io": "^2.0.0",
-    "@digitalbazaar/did-method-key": "^5.2.0",
-    "@digitalbazaar/http-client": "^4.0.0",
+    "@digitalcredentials/did-io": "^1.0.2",
+    "@digitalcredentials/did-method-key": "^3.0.0",
+    "@digitalcredentials/http-client": "^5.0.4",
     "klona": "^2.0.6"
   },
   "devDependencies": {
@@ -37,6 +31,7 @@
     "@digitalbazaar/vc": "^6.2.0",
     "@digitalbazaar/x25519-key-agreement-key-2019": "^6.0.0",
     "@digitalbazaar/x25519-key-agreement-key-2020": "^3.0.0",
+    "@npmcli/package-json": "^6.1.1",
     "c8": "^9.1.0",
     "chai": "^4.3.6",
     "cross-env": "^7.0.3",

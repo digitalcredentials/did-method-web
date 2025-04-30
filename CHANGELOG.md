@@ -1,4 +1,9 @@
-# @digitalbazaar/did-method-web ChangeLog
+# @digitalcredentials/did-method-web ChangeLog
+
+## 1.1.0 - 2025-04-30
+
+### Changed
+- updates to use @digitalcredentials libs
 
 ## 1.0.1 - 2024-04-14
 
